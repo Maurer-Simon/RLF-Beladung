@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feuerwehr Fahrzeug</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>RLF St. Roman - Beladung</h1>
+    <div id="auswahlbereiche">
+        <label><input type="checkbox" name="bereich" value="Ausgangsansicht" onchange="zeigeBereich(this)">Ausgangsansicht</label>
+        <label><input type="checkbox" name="bereich" value="Dachbox" onchange="zeigeBereich(this)">Dachbox</label>
+        <label><input type="checkbox" name="bereich" value="Fahrerraum" onchange="zeigeBereich(this)">Fahrerraum</label>
+        <label><input type="checkbox" name="bereich" value="Mannschaftsraum" onchange="zeigeBereich(this)">Mannschaftsraum</label>
+        <label><input type="checkbox" name="bereich" value="Geräteraum 1" onchange="zeigeBereich(this)">Geräteraum 1</label>
+        <label><input type="checkbox" name="bereich" value="Geräteraum 2" onchange="zeigeBereich(this)">Geräteraum 2</label>
+        <label><input type="checkbox" name="bereich" value="Geräteraum 3" onchange="zeigeBereich(this)">Geräteraum 3</label>
+        <label><input type="checkbox" name="bereich" value="Geräteraum 4" onchange="zeigeBereich(this)">Geräteraum 4</label>
+        <label><input type="checkbox" name="bereich" value="Geräteraum 5" onchange="zeigeBereich(this)">Geräteraum 5</label>
+        <label><input type="checkbox" name="bereich" value="Geräteraum 6" onchange="zeigeBereich(this)">Geräteraum 6</label>
+        <label><input type="checkbox" name="bereich" value="Geräteraum 7" onchange="zeigeBereich(this)">Geräteraum 7</label>
+    </div>
+
+    <div>
+        <button onclick="setzeZustand('geschlossen')">Geschlossen</button>
+        <button onclick="setzeZustand('geöffnet')">Geöffnet</button>
+    </div>
+
+    <div id="geraeteraum">
+        <img id="bereich-bild" src="assets/rechts_gesamt_geschlossen.jpg" alt="Geschlossener Bereich">
+    </div>
+
+    
+    <div id="gerat-bereich"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

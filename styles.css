@@ -1,0 +1,39 @@
+#auswahlbereiche {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#auswahlbereiche label {
+    margin-right: 10px;
+}
+
+#geraeteraum {
+    margin-bottom: 20px;
+}
+
+#bereich-bild {
+    width: auto;
+    height: 60vh; /* 60% der Bildschirmhöhe */
+}
+
+/* Stil für die Knöpfe der Geräte */
+.gerat-knopf {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Stil für die Spalten der Geräte */
+.gerat-spalte {
+    float: left;
+    width: 33.33%; /* Eine dritte der Bildschirmbreite */
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+/* Stil für die Gerätebilder */
+.gerat-bild {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
